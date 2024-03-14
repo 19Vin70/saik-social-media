@@ -114,7 +114,8 @@ const HomeScreen = ({ navigation }) => {
                     marginLeft: 10,
                     fontSize: 18,
                     fontWeight: 'bold',
-                    letterSpacing: 0.6
+                    letterSpacing: 0.6,
+                    flexWrap: 'wrap'
                   }}>{post.author.name}</Text>
                 </View>
                 <View style={{
