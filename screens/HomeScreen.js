@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { posts } from '../data/posts';
 import { createStackNavigator } from '@react-navigation/stack';
 import Header from '../components/Header';
+import Stories from '../components/Stories';
 
 const Stack = createStackNavigator();
 
@@ -90,6 +91,9 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Header />
       <ScrollView>
+        <View>
+          <Stories />
+        </View>
         {posts.map((post, index) => {
           return (
             <TouchableOpacity key={index} onPress={() => navigation.navigate('PostDetail', { post })}>
